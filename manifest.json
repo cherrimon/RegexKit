@@ -1,0 +1,45 @@
+{
+
+    "manifest_version": 2,
+    "name": "RegexKit",
+    "version": "1.0.2",
+  
+    "description": "simple regex tool for development and testing.",
+    "homepage_url": "https://github.com/simonfongnt/Firefox-RegexKit",
+    "icons": {
+      "16":   "icons/icon16.png",
+      "32":   "icons/icon32.png",
+      "48":   "icons/icon48.png",
+      "96":   "icons/icon96.png",
+      "192":  "icons/icon192.png",
+      "512":  "icons/icon512.png"
+    },
+  
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    
+    "background": {
+      "scripts": ["js/background.js"],
+      "persistent": true
+    },
+    
+    "browser_action": {
+      "default_icon": "icons/icon32.png",
+      "default_title": "RegexKit",
+      "default_popup": "popup.html"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["js/content.js"]
+        }
+    ],
+  
+    "web_accessible_resources": [
+    ]
+  
+  }
+  
