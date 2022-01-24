@@ -122,10 +122,6 @@ function onStorageError(error) {
 	console.log(`onStorageError: ${error}`);
 }
 
-// update history in both storage and UI
-function updateHistory(){
-}
-
 // add search content to storage
 function addHistory(){
 	console.log(`addHistory: ${history}`);
@@ -202,7 +198,7 @@ function handleBtn(e){
 		case BTN_SEARCH.id:
 			addHistory();
 		break;
-		// // default:  
+		// default:  
 	}
 	handleInput();
 }
@@ -219,7 +215,6 @@ function handleKeyPress(e){
 function handleInput() {
 	delayCommand = COMMAND_POPUP_SEARCH;
 	clearTimeout(messageTimer);
-
 	messageTimer = setTimeout(
 		function() { 
 			backgroundMessage({
@@ -230,18 +225,6 @@ function handleInput() {
 			}) 
 		}, MSG_DELAY_NORMAL
 	)
-	// if (INPUT_PATTERN.value){             	// have input
-	// 	messageTimer = setTimeout(
-	// 	function() { 
-	// 		backgroundMessage({
-	// 			MESSAGE_TAG_COMMAND:  	delayCommand,
-	// 			MESSAGE_TAG_AFFIX:   	INPUT_AFFIX.value,
-	// 			MESSAGE_TAG_LIMIT:    	INPUT_LIMIT.value,
-	// 			MESSAGE_TAG_PATTERN:  	INPUT_PATTERN.value,
-	// 		}) 
-	// 	}, MSG_DELAY_NORMAL
-	// 	)
-	// }
 }
 
 

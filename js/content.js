@@ -47,12 +47,15 @@ function backgroundMessage(payload) {
 
 // Check if the given node is a text node
 function isTextNode(node) {
-	return node && node.nodeType === TEXT_NODE_TYPE;
+	return node && 
+	node.nodeType === TEXT_NODE_TYPE;
 }
 
 // Check if the given node is an expandable node that will yield text nodes
 function isExpandable(node) {
-	return node && node.nodeType === ELEMENT_NODE_TYPE && node.childNodes && 
+	return node && 
+	node.nodeType === ELEMENT_NODE_TYPE && 
+	node.childNodes && 
 	!UNEXPANDABLE.test(node.tagName) && node.visible();
 }
 
@@ -136,7 +139,7 @@ function computeRes(request){
 		addHighlight(pattern);				// highlight the content if possible					
 		if (results == null)		
 			results = []            		// empty array
-		resultCount = results.length;	// limit number of results
+		resultCount = results.length;		// limit number of results
 		if (results.length > limit){
 			results.length = limit;
 		}

@@ -2,7 +2,7 @@
 
     "manifest_version": 2,
     "name": "RegexKit",
-    "version": "1.0.2",
+    "version": "1.0.3",
   
     "description": "simple regex tool for development and testing.",
     "homepage_url": "https://github.com/simonfongnt/Firefox-RegexKit",

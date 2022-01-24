@@ -2,6 +2,11 @@
 
 a simple regex tool for development and testing.
 
+## version 1.0.3
+* clean up unnecessary code
+* added .gitignore
+* allowed to send empty pattern to remove highlights
+
 ## version 1.0.2
 * 1st version working with chrome
 
