@@ -2,6 +2,10 @@
 
 a simple regex tool for development and testing.
 
+## version 1.0.4
+* migrate from manifest v2 to v3.
+* removed persisent in background script.
+
 ## version 1.0.3
 * clean up unnecessary code
 * added .gitignore
@@ -17,6 +21,7 @@ a simple regex tool for development and testing.
 * storage for history added
 * renamed variables
 
+## version 1.0.0
 This extension includes:
 
 * a browser action with a popup including HTML, CSS, and JS

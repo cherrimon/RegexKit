@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "RegexKit",
   "version": "1.0.4",
 
@@ -20,10 +20,10 @@
   ],
   
   "background": {
-    "service_worker": "js/background.js"
+    "scripts": ["js/background.js"]
   },
   
-  "action": {
+  "browser_action": {
     "default_icon": "icons/icon32.png",
     "default_title": "RegexKit",
     "default_popup": "popup.html"
